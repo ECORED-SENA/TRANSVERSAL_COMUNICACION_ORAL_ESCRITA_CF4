@@ -1,0 +1,58 @@
+.stepCard--bgcolor_01 {
+  background-color: #E23A59;
+}
+.stepCard--bgcolor_02 {
+  background-color: #F9B61E;
+}
+.stepCard--bgcolor_03 {
+  background-color: #45AEAE;
+}
+.stepCard--bodyColor {
+
+}
+
+.stepCard {
+  margin-top: 2rem;  
+  &__wrapper {     
+    position: relative;        
+    &::before {
+      content: "";      
+      position: absolute;
+      width: 100%;
+      height: 50%;       
+      bottom: 0;
+      left: 0;
+      background-color: #F2F2F2;             
+    }
+    .stepCard__header {
+      position: relative;
+      display: inline-block;
+      padding: 1rem 2.5rem;      
+      z-index: 10;      
+      h3 {        
+        color: white !important; 
+        margin-bottom: 0 !important;
+      }  
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        z-index: 1;
+        border: solid 7px transparent;
+        border-left-color: rgba($color: #ffffff, $alpha: 0.5);
+      }        
+    }    
+  }
+  &__info {
+    padding: 1rem 2rem 2rem 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #F2F2F2; 
+    p {
+      margin-bottom: 0 !important;
+    }
+    
+  }  
+}

@@ -1,0 +1,56 @@
+.customTable{
+  width: 100%;
+  display: table;
+  border-top: 3px solid red ;
+  &_row{
+    display: table-row;       
+    background-color: white;
+    &:nth-of-type(odd){
+      background-color: #F8FAFE;
+    }
+    &_header{ 
+      display: table-row;
+      background-color: #dfe2e9;     
+      .customTable_cell{
+        text-align: center;
+      }
+    }
+  }
+  
+  &_cell {
+    display: table-cell;
+    padding: 1.5rem 1.5rem; 
+    p {
+      margin-bottom: 0 !important;
+    }  
+  }
+}
+
+
+@media screen and (max-width: 765px) {
+  .customTable {
+    display: block;
+    &_row {
+      display: block;
+      padding: 1rem 0rem;
+      &_header {
+        .customTable_cell {
+          display: none;
+        }
+      }
+    }
+    &_cell{
+      padding: 0.5rem 1.5rem;
+      display: block;
+      &::before {
+        content: attr(data-title);
+        font-size: 12px;        
+        margin-bottom: 0.25rem;
+        color: rgb(151, 151, 151);        
+        text-transform: uppercase;
+        display: block;
+      }
+    }  
+  } 
+  
+}
