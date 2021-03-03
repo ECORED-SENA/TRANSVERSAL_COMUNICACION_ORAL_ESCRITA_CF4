@@ -62,18 +62,12 @@
         "slug": "comunicacion_digital",
         "title": "2.1 Utilización de aplicaciones digitales",
         "anchor": "tema2_1"
-      },
+      },      
       {
         "icon": "fa fa-file-text",
         "slug": "comunicacion_digital",
-        "title": "2.2 El chat",
+        "title": "2.2 Netiqueta",
         "anchor": "tema2_2"
-      },
-      {
-        "icon": "fa fa-file-text",
-        "slug": "comunicacion_digital",
-        "title": "2.3 Netiqueta",
-        "anchor": "tema2_3"
       }
     ]   
   }  
